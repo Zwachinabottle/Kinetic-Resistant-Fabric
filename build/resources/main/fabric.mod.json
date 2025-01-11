@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "kineticresistance",
+	"version": "1.0.0",
+	"name": "Kinetic Resistance",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Zwachinabottle"
+	],
+	"contact": {
+		"homepage": "https://zwachinabottle.net/",
+		"sources": "https://github.com/Zwachinabottle/KineticResistance"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zwachinabottle.kineticresistance.KineticResistance"
+		],
+		"client": [
+			"net.zwachinabottle.kineticresistance.KineticResistanceClient"
+		],
+		"fabric-datagen": [
+			"net.zwachinabottle.kineticresistance.KineticResistanceDataGenerator"
+		]
+	},
+	"mixins": [
+		"kineticresistance.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
